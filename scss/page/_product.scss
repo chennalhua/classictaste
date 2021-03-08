@@ -1,0 +1,12 @@
+.product-area{
+    li{
+        margin-bottom:60px;
+    }
+    .page-list{
+        font-size: 18px;
+        .page-click a{
+            color:$dark;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,217 @@
+body{
+    overflow-x: hidden;
+}
+
+header{
+    font-family: 'Noto Serif TC', 'Microsoft MingLiU', serif;
+    min-height: 100vh;
+    
+    .cricle{
+        position: relative;
+    }
+    .header-pro{
+        position:absolute;
+        top:-20px;
+        left: 10%;
+
+    }
+    .kao-pr{
+        position: relative;
+        .kao{
+            position: absolute;
+            top:240px;
+            h3{
+                font-size: 4.5rem;
+            }
+        }
+    }
+    .header-info{
+        // margin-top:295px;
+        h2{
+            font-size:40px;
+        }
+        p{
+            font-size:24px;
+        }
+    }
+}
+
+
+
+@media (min-width:768px){
+.doll-pr{
+    position: relative;
+    .doll{
+        position: absolute;
+        top: -40px;
+        right: 15%;
+        z-index: 4;
+        width: 100px;
+    }
+}
+}
+.store-area{
+    padding:150px 0;
+    background:url(../img/index-img/store.JPG) no-repeat right bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    h2::before {
+        content: "";
+        border-left: 5px solid $primary;
+        margin-right: 15px;
+    }
+    p{
+        line-height:30px;
+    }
+}
+
+.pro-img{
+    overflow:hidden;
+    position: relative;
+    z-index: 1;
+    
+    .pro-tag p{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border-radius: 5px;
+        padding: 5px 8px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:500px){
+    .header-pro{
+        img{
+           width: 80%;
+        }
+    }
+    .store-area{
+        padding:100px 0;
+        background:url(../img/index-img/store.JPG) no-repeat right bottom;
+        background-size: cover;
+    }
+}
+
+@media (max-width:991px){
+    
+    .pro-info{
+        a{
+            margin:15px 15px 0 0;
+        }
+        i{
+            font-size:22px;
+        }
+    }
+}
+
+@media (min-width:992px){
+    .pro-img{
+        overflow:hidden;
+        position: relative;
+        z-index: 1;
+        img{
+            width: 100%;
+            transform:scale(1);
+            transition: all .5s ease-out;
+            &:hover{
+                transform:scale(1.1);
+            }
+        }
+        .pro-info{
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            right: 15px;
+            transition: 0.8s;
+            opacity: 0;
+            a{
+                font-size: 16px;
+                color: #fff;
+                background: rgba(36, 36, 36, 0.8);
+                -webkit-flex: 0 0 50px;
+                flex: 0 0 50px;
+                max-width: 50px;/*因為寫flex的關係*/
+                height: 50px;
+                text-align: center;
+            }
+            i{
+                line-height: 50px;
+                text-align: center;
+            }
+            a.add-to-cart{
+                -webkit-flex: 0 0 calc(100% - 100px);
+                flex: 0 0 calc(100% - 100px);
+                max-width: calc(100% - 100px);
+                border-left: 1px solid rgba(255, 255, 255, 0.5);
+                border-right: 1px solid rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+    
+    .pro-content:hover .pro-img .pro-info{
+        opacity: 1;
+    }
+}
+
+
+.nav-link{
+    color:$secondary;
+}
+
+.top a{
+    width:50px;
+    height:50px;
+    background:$secondary;
+    border-radius:50%;
+    color:white;
+    margin:10px;
+    position:fixed;
+    bottom:0;
+    right:0;
+    &:hover{
+        box-shadow: 0px 0px 5px #303030;
+    }
+  }
+  
+  .top i{
+    position:absolute;
+    top:18px;
+    left:18px;
+  }
+
+  .side-line a , .side-fb a{
+    width:60px;
+    height:60px;
+    margin:0 auto;
+    background:$secondary;
+    color:white;
+    z-index: 1000 !important;
+    &:hover{
+        box-shadow: 0px 0px 5px #303030;
+        background:$primary;
+    }
+  }
+
+  .side-line a{
+    position:fixed;
+    bottom:210px;
+    right:0;
+  }
+  .side-fb a{
+    position:fixed;
+    bottom:150px;
+    right:0;
+  }
+  
+.side-fb i{
+    padding:10px;
+    font-size:40px;
+  }
+
+  .side-line i{
+      padding:12px;
+      font-size:40px;
+  }

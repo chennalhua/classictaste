@@ -1,0 +1,42 @@
+.prorim-area{
+    .card{
+        border:0;
+        &-header{
+            border:0;
+            background:transparent
+        }
+    }
+    h4{
+        color:white;
+        text-align: center;
+        padding:20px 0;
+    }
+    .nav-tabs .nav-link.active{
+        color:white;
+        background:$primary;
+    }
+}
+
+.img-play{
+    height:600px;
+    padding:20px;
+}
+
+.img-area{
+    height: 350px;
+    background:white;
+    border-radius: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    img{
+        max-width: 90%;
+        // display:block;
+    }
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: $secondary;
+    font-size:15px;
+}
+

@@ -1,0 +1,101 @@
+.elecinvoice-content{
+    button{
+        width:100%;
+        padding:20px 0;
+        font-size:24px;
+        font-weight: bold;
+        background:$primary;
+        color: $secondary;
+        outline:none;
+        border:none;
+        cursor: pointer;
+    }
+    button:hover{
+        background:$secondary;
+        color: $light;
+    }
+} 
+.invoice-process{
+    i{
+        color:$secondary;
+        font-size: 20px;
+    }
+    hr{
+        width: 65px;
+        height: 1px;
+        background: $secondary;
+    }
+}    
+
+.invoice-btn{
+    li{
+        width: 100%;
+    }
+    a{
+        
+        display: block;
+        color: $secondary;
+        font-size:20px;
+        border:1px solid $secondary;
+        padding:15px 0;
+        text-align: center;
+        text-decoration: none;
+    }
+    a:hover{
+        background:$primary;
+        color:$light;
+    }
+    .active-btn{
+        background:$secondary;
+        color:$light;
+    }
+}    
+      
+.order-info{
+    h3{
+       font-size: 24px;
+       padding:16px 0;
+       background:$secondary;
+       text-align: center;
+    }
+}
+.user-order,.user-shop{
+    margin-bottom: 20px;
+    border: 1px solid $secondary;
+    ul{
+        padding:16px 20px;
+    }
+}
+.user-order{
+    li{
+        display: flex;
+        justify-content:space-between;
+        margin-bottom:10px;
+        color:$success;
+    }
+    li:last-of-type{
+        margin-top:16px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+.user-shop{
+    img{
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+    li{
+        display: flex;
+        color: $success;
+        margin-bottom: 16px;
+        p{
+            line-height:25px;
+            padding:16px;
+        }
+        span {
+            font-size:20px;
+            font-weight: 500;
+        }
+    }
+}    
